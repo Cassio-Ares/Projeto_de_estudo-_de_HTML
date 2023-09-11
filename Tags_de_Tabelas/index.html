@@ -1,29 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tags de Tabelas no HTML</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Tags para Tabelas no HTML</h1>
     <h2>Table</h2>
-    <p>Tag principal para criar a tabela ela engloba toda a tabela<br/>
-         <.table> todos os elementos da tabela <./table> </p>
+    <p>
+      Tag principal para criar a tabela ela engloba toda a tabela<br />
+      <.table> todos os elementos da tabela <./table>
+    </p>
 
     <h2>Caption</h2>
-    <p>Tag para criar a leganda da tabela, fica logo abaixo de "table"<br/></p>
+    <p>Tag para criar a leganda da tabela, fica logo abaixo de "table"<br /></p>
 
-    <h2></h2>
-    <p><br/></p>
+    <h2>Thead</h2>
+    <p>
+      Tag para agrupar os conteúdo de cabeçalho serve para organizar melhor<br />
+      dividindo a tabela em Header, body e footer se nescessario
+    </p>
 
-    <h2></h2>
-    <p><br/></p>
+    <h2>Tbody</h2>
+    <p>Tag que define parte do corpo da tabela<br /></p>
 
-    <h2></h2>
-    <p><br/></p>
+    <h2>Tfoot</h2>
+    <p>Tag que define o footer da tabela<br /></p>
 
-    <h2></h2>
-    <p><br/></p>
-</body>
+    <h2>Tr</h2>
+    <p>Tag que define uma linha em uma tabela<br /></p>
+
+    <h2>Th</h2>
+    <p>
+      Tag que define as celulas do Theader(cabeçalho)são colocadas<br />
+      dentro da tag "tr" a linha do cabechalho
+    </p>
+
+    <h2>Td</h2>
+    <p>
+      Tag que constroi as celulas de dados usada dentro das linhas "tr" <br />
+      dentro do "tbody"
+    </p>
+
+    <p>
+      O tfooter não tem tags especificas, ele deve ser construido com o mesmo
+      modelo de tags que o tbody <br />
+    </p>
+
+    <h1>Tags para fazer estilização</h1>
+
+    <h2>Colgroup</h2>
+    <p>Tag que especifica um grupo de colunas para estilização<br /></p>
+
+    <h2>Col</h2>
+    <p>Tag onde é colocada as especificações para as colunas<br /></p>
+
+    <p>
+      <.table><br/>
+            <.colgroup><br/>
+              <.col span="2" style="background-color:Pink"><br/>
+              <.col style="background-color:yellow"><br/>
+            <./colgroup><br/><br/>
+            <.tr><br/>
+              <.th>HTML</th><br/>
+              <.th>CSS</th><br/>
+              <.th>JS</th><br/>
+            <./tr><br/>
+    </p>
+
+    <p>OBS:cada <.col> irá estilizar uma coluna<br />  </p>
+      para estilizar 2 ou mais colunas em seguidas usamos<br /> 
+      "span= e o numero de colunas" 
+      nume
+    <h2>Exemplo de tabela completa</h2>
+
+    <p>
+        <.table><br/><br/>
+            <.thead><br/>
+                <.tr><br/>
+                    <.th>cabechalho 1</th><br/>
+                    <.th> cabechalho 2 </th><br/>
+                <./tr><br/>
+            <./thead><br/><br/>
+            <.tbody><br/>
+              <.tr><br/>
+                <.td>celula 1</td><br/>
+                <.td>celula 2</td><br/>
+              <./tr><br/>
+            <./tbody><br/><br/>
+            <.tfoot><br/>
+                <.tr><br/>
+                    <.td>celula 1</td><br/>
+                    <.td>celula 2</td><br/>
+                  <./tr><br/>
+            <./tfoot><br/><br/>
+        <./table>
+    </p>
+  </body>
 </html>
