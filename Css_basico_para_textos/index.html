@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>CSS básico para estilização de textos</title>
   </head>
   <body>
@@ -49,36 +48,219 @@
     </p>
 
     <p>
-      <strong>text-align-last:center;</strong> alinhou a ultima linha ao centro similar ao
-      text-align<br />
+      <strong>text-align-last:center;</strong> alinhou a ultima linha ao centro
+      similar ao text-align<br />
       esta propriedade possui os comandas left, right, center e justify
     </p>
 
     <h3>Direction</h3>
-    <p>Propriedade que defina onde o texto aparecerá na pagina "ltr" normal a esquerda e "rtl" a direita </p>
-    <p style="direction: rtl;">Texto escrito ao contrario </p>
+    <p>
+      Propriedade que defina onde o texto aparecerá na pagina "ltr" normal a
+      esquerda e "rtl" a direita
+    </p>
+    <p style="direction: rtl">Texto escrito ao contrario</p>
     <p><strong>direction: rtl;</strong></p>
 
     <h3>Unicode-bidi</h3>
-    <p>Propriedade que define a direção que as letras irão seguir da esquerda para direita "normal"<br/>
-    ou da direita para a esquerda "bidi-override"</p>
-    <p style="direction: rtl; unicode-bidi: bidi-override;">Texto escrito ao contrario</p>
+    <p>
+      Propriedade que define a direção que as letras irão seguir da esquerda
+      para direita "normal"<br />
+      ou da direita para a esquerda "bidi-override"
+    </p>
+    <p style="direction: rtl; unicode-bidi: bidi-override">
+      Texto escrito ao contrario
+    </p>
 
-    <p><strong>OBS:</strong>Para ter o efeito de inversão é preciso unir dois comandos 
-    <strong> direction: rtl;   e o  unicode-bidi: bidi-override;</strong></p>
+    <p>
+      <strong>OBS:</strong>Para ter o efeito de inversão é preciso unir dois
+      comandos
+      <strong> direction: rtl; e o unicode-bidi: bidi-override;</strong>
+    </p>
 
-    <h3></h3>
-    <p></p>
+    <h3>Writing-mode</h3>
+    <p>Propriedade para definir a direção das linhas horizontal ou vertical</p>
 
-    <h3></h3>
-    <p></p>
+    <div style="display: flex">
+      <p style="writing-mode: vertical-lr">
+        Texto com <strong>writing-mode: vertical-lr</strong>
+      </p>
+      <br />
+      <p style="writing-mode: horizontal-tb">
+        Texto com <strong>writing-mode: horizontal-tb</strong>
+      </p>
+    </div>
 
-    <h3></h3>
-    <p></p>
+    <h3>Vertical-align</h3>
+    <p>Propriedade define o alinhamento vertical de uma elemento.</p>
 
-    <h3></h3>
-    <p></p>
+    <p>
+      Texto normal e a imagem esta com a propriedade vertical-align: super
+      <img style="vertical-align: super" src="./img/checked.svg" />
+    </p>
 
+    <p>
+      A propriedade "vertical-align" sup, super, botton, ...diversos comandos
+      para alinhamento.
+    </p>
+
+    <h2>Decoração do texto</h2>
+
+    <h3>Text-decoration-line</h3>
+    <p>Propriedade permite adicionar linha(s) para decorar o texto.</p>
+
+    <p style="text-decoration-line: underline">
+      Texto com uma linha na parte da baixo para dar destaque
+    </p>
+
+    <p>
+      A propriedade permite colocar linha(s) na parte superior(overline), sobre
+      o texto(overline), undeline como no exemplo...
+    </p>
+
+    <h3>Text-decoration-color</h3>
+    <p>Propriedade permite colocar cor nas linhas de decoração.</p>
+
+    <p style="text-decoration: overline underline; text-decoration-color: blue">
+      Texto com a a propridade text-decoration: overline underline;
+    </p>
+
+    <h3>Text-decoration-style</h3>
+    <p>
+      Propriedade para ajustar como se quer a linha, solida (solid), dupla
+      (double), ondulada(wavy), ...
+    </p>
+
+    <p style="text-decoration: underline; text-decoration-style: wavy">
+      Texto com propriedade de linha ondulada
+    </p>
+
+    <h3>Text-decoration-thickness</h3>
+    <p>Propriedade permite mudar a grossura da linha.</p>
+
+    <p
+      style="
+        text-decoration: overline underline;
+        text-decoration-thickness: 5px;
+      "
+    >
+      Texto com linhas com 5px
+    </p>
+
+    <h2>Text-decoration</h2>
+    <p>
+      Propriedade que engloba todas as anteriores citadas; porém ele é muito
+      usado por sua propriedade<br />
+      "none" para tirar o sublinhado de links que por padrão do HTML vem com um
+      sublinhado
+    </p>
+
+    <a
+      target="_blank"
+      href="https://www.w3schools.com/css/css_text_decoration.asp"
+      >Link normal com o sublinhado </a
+    ><br /><br />
+
+    <a
+      target="_blank"
+      href="https://www.w3schools.com/css/css_text_decoration.asp"
+      style="text-decoration: none"
+      >Link com text-decoration: none
+    </a>
+
+    <h2>Text-transform</h2>
+    <p>
+      Propriedade usada para especificar letras maiusculas e minisculas em um
+      texto.
+    </p>
+
+    <input
+      style="text-transform: uppercase; width: 30em"
+      type="text"
+      name=""
+      placeholder="Tente digitar algo com letras minisculas"
+    />
+
+    <p>
+      O input esta com a propriedade "text-transform: uppercase" por isso todos
+      os texto se tornam maiusculas
+    </p>
+
+    <h2>Espaçamento de Texto</h2>
+
+    <h3>Text-indent</h3>
+    <p>Propriedade permite colocar recuo na primeira linha do texto.</p>
+
+    <p style="text-indent: 50px">
+      <strong>Texto com 50px de recuo na primeira linha</strong> Lorem Ipsum is
+      simply dummy text of <br />
+      the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy<br />
+      text ever since the 1500s, when an unknown printer took a galley of type
+      and scramblspecimen.
+    </p>
+    <br />
+
+    <p>
+      <strong>Texto normal</strong> Lorem Ipsum is simply dummy text of <br />
+      the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy<br />
+      text ever since the 1500s, when an unknown printer took a galley of type
+      and scramblspecimen.
+    </p>
+    <br />
+
+    <h3>Letter_Spacing</h3>
+    <p>
+      Propriedade para definir o espaçamento entre os caracteres de um texto.
+    </p>
+
+    <p>Texto com espaçamento padrão</p>
+    <p style="letter-spacing: 10px">
+      Texto com a propriedade "letter-spacing:10px "
+    </p>
+
+    <h3>Line-height</h3>
+    <p>Propriedade para definir o espaço entre as linhas</p>
+
+    <p>
+      <strong>Texto com distancia padrão</strong> Lorem Ipsum is simply <br />
+      dummy text of the printing and typesetting industry. Lorem Ipsum has
+      <br />
+      been the industry's standard dummy text ever since the 1500s, and
+      scramblspecimen.
+    </p>
+
+    <p style="line-height: 30px">
+      <strong>Texto com a propriedade line-heigth: 30px</strong> um is simply
+      <br />
+      dummy text of the printing and typesetting industry. Lorem Ipsum has
+      <br />
+      been the industry's standard dummy text ever since the 1500s, and
+      scramblspecimen.
+    </p>
+
+    <h3>Word-Spacing</h3>
+    <p>Propriedade usada para definir o espaço entre as palavras em um texto</p>
+
+    <p>Texto com espaçamento padrão entre as palavras.</p>
+
+    <p style="word-spacing: 10px">
+      Texto como a propriedade "word-spacing: 10px".
+    </p>
+
+    <h2>Sobra de Texto</h2>
+
+    <h3>Text-Shadow</h3>
+    <p>Propriedade para colocar sobras em textos</p>
+
+    <p>
+      <strong>text-shadow: 10px, 10px, 5px  #0000ff </strong><br/>
+      possui propriedades:  * horizontal * vertical *blur  *cor <br/>
+      O valor blue é opcional
+    </p>
+
+    <p style="text-shadow: 10px 10px 5px  #0000ff; font-size: 30px"> Texto com text-shadow</p>
     
+
   </body>
 </html>
