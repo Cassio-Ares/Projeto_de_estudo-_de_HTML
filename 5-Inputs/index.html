@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleInput.css" />
+    <title>Modelos de Inputs</title>
+  </head>
+
+  <body>
+    <input />
+    <h1>Modelos de Inputs</h1>
+
+    <h2>Form</h2>
+
+    <p>
+      Tag que espeficica que estamos criando um formulario, ele tambem ao
+      agrupar o <br />
+      formulario garante que todos os dados sejam encaminhados em conjunto para
+      um caminho<br />
+      pré determinado
+    </p>
+
+    <h2>Label</h2>
+    <p>
+      Tag usada para dar um rotulo, nome de identificação ao input, assim fica
+      mais facil o usuario saber <br />
+      a função do input.
+    </p>
+
+    <h2>Input</h2>
+    <p>
+      Tag que define um campo de entrada onde o usario pode de deversas formas
+      envias dados, <br />
+      ele possui varios tipos, e pode mandar diversas informações.
+    </p>
+
+    <h2>Input type="text"</h2>
+    <p>Type que define um campo de texto de linha unica.</p>
+
+    <label for="">Digite seu Nome:</label>
+    <input type="text" placeholder="Digite seu nome" />
+
+    <h2>Input type="passoword"</h2>
+    <p>Type que define um campo de senha.</p>
+    <label for="">Digite sua senha</label>
+    <input type="password" placeholder="Digite sua senha" />
+
+    <h2>Input type="radio"</h2>
+    <p>Type que define um botão de opções, podendo marcar 1 apenas 1 opção.</p>
+
+    <form action="">
+      <label for="">Tente escolher mais que um input.</label>
+      <input type="Radio"  name="Teste"/>
+      <input type="Radio" name="Teste" />
+      <input type="Radio" name="Teste" />
+    </form>
+
+    <strong>Para fazer com que só uma opção seja marcada vc pode suar o name, pois sempre que <br/>
+       um input type= radio com o mesmo name é marcado outra é desmarcado.</strong>
+
+    <h2>Input type="checkbox"</h2>
+    <p>Type similar ao "radio" porem este permite a escolha de mais de uma opção </p>
+    <label for="">Marque se vcs compreendeu.</label>
+    <input type="checkbox" /><br/><br/>
+
+    <strong>Type de input bem dificil de editar com CSS(Pesquise sobre: "Appearance", seletor "input[type:checkbox]" content:"")</strong>
+    <p>Olhar ex no CSS desta pagina</p>
+
+    
+
+    <h2>Input type="submit"</h2>
+    <p>Type que cria um botão que ao ser clicado envia todos os dados.</p>
+
+    <form>
+      <label for="">Digite algo</label><br />
+      <input type="text" placeholder="Digite algo" /><br /><br />
+
+      <input type="submit" />
+    </form>
+
+    <h2>Input type="reset"</h2>
+    <p>Type que reseta todos os campos ao seu estado base.</p>
+    <form>
+      <label for="">Digite algo</label><br />
+      <input type="text" placeholder="voltei" /><br /><br />
+      <label for="">Reset este Input</label><br />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
