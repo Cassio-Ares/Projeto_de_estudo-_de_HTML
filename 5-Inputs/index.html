@@ -8,8 +8,44 @@
   </head>
 
   <body>
-    <input />
     <h1>Modelos de Inputs</h1>
+
+    <h2>Atributos</h2>
+    <p>
+      Atributos são informações, valores, dados, regras, .... e outras
+      informações <br />
+      que podemos usar junto as tag input para ter um melhor aproveitamento.
+    </p>
+
+    <p>
+      *<strong>required</strong> atributo colocado dentro da tag input para
+      sinalizar <br />
+      ao sistema e ao usuario que é obrigatorio o preenchimento daquele
+      espaço.<br />
+
+      *<strong>checked</strong> atributo para inputs type radio e checkbox<br />
+      ele pode deixar este input já pré marcado ou ser usado para estilização
+      para quando<br />
+      ele for marcado mudar. *<strong>placeholder</strong>permite escrever texto
+      dentro do input e quando o usuario clicar<br />
+      este texto irá sumir.<br />
+
+      *<strong>disables</strong>faz com que o campo de input não possa ser
+      modificado<br />
+
+      *<strong>value</strong>especifica o valor padrão para um input, ou carrega
+      o valor novo.<br />
+
+      *<strong>max e min</strong>especificam valores maximo e/ou minimo para um
+      input<br />
+
+      *<strong>maxlength</strong>especifica o numero maximo de caracteres para
+      um input<br />
+
+      <strong>cols="" rows=""</strong>atributos da tag textarea para determinar
+      seu o tamanho<br />
+      de informações que ela aceita.
+    </p>
 
     <h2>Form</h2>
 
@@ -51,23 +87,128 @@
 
     <form action="">
       <label for="">Tente escolher mais que um input.</label>
-      <input type="Radio"  name="Teste"/>
+      <input type="Radio" name="Teste" />
       <input type="Radio" name="Teste" />
       <input type="Radio" name="Teste" />
     </form>
 
-    <strong>Para fazer com que só uma opção seja marcada vc pode suar o name, pois sempre que <br/>
-       um input type= radio com o mesmo name é marcado outra é desmarcado.</strong>
+    <strong
+      >Para fazer com que só uma opção seja marcada vc pode suar o name, pois
+      sempre que <br />
+      um input type= radio com o mesmo name é marcado outra é
+      desmarcado.</strong
+    >
 
     <h2>Input type="checkbox"</h2>
-    <p>Type similar ao "radio" porem este permite a escolha de mais de uma opção </p>
+    <p>
+      Type similar ao "radio" porem este permite a escolha de mais de uma opção
+    </p>
     <label for="">Marque se vcs compreendeu.</label>
-    <input type="checkbox" /><br/><br/>
+    <input type="checkbox" /><br /><br />
 
-    <strong>Type de input bem dificil de editar com CSS(Pesquise sobre: "Appearance", seletor "input[type:checkbox]" content:"")</strong>
-    <p>Olhar ex no CSS desta pagina</p>
+    <strong
+      >Type de input bem dificil de editar com CSS(Pesquise sobre: "Appearance",
+      seletor "input[type:checkbox]" content:"")</strong
+    >
 
-    
+    <h2>Input type="color"</h2>
+    <p>Type que mostra um seletor para escola de cores</p>
+    <label for="">Escolha uma cor</label>
+    <input type="color" />
+
+    <h2>Input type="date"</h2>
+    <p>Type usado para campos onde se deve marcar uma data.</p>
+    <label for="">Escolha uma data </label>
+    <input type="date" />
+
+    <h2>Input type="datetime-local"</h2>
+    <p>Type usado para campos onde é nescessario marcar data e hora</p>
+    <label for="">Marque a data e escolha um horario</label>
+    <input type="datetime-local" />
+
+    <h2>Input type="email"</h2>
+    <p>Type usado para campos onde se deve colocar e-mail.</p>
+    <label for="">Digite seu e-mail</label>
+    <input type="email" />
+
+    <h2>Input type="image"</h2>
+    <p>
+      Type que define uma imagem como botão para envio. Para que funciona a
+      imagem tem que ser<br />
+      colocada igual na tag de "img" com um <strong>"src"</strong>
+    </p>
+    <label for="">A img abaixo é um botão</label><br />
+    <input src="./img/transferir.jpg" type="image" />
+
+    <h2>Input type="file"</h2>
+    <p>
+      Type que define um botão para para campos onde é nescessario escolher e
+      enviar arquivos
+    </p>
+    <label for="">Selecione uma pasta</label>
+    <input type="file" name="Escolha os arquivos para enviar" />
+
+    <h2>Input type="hidden"</h2>
+    <p>
+      Type que cria um campo de entrada oculto não visivel ao usuario de forma
+      convencional<br />
+      normalmente carrega dados importantes, que não devem ser modificados.
+    </p>
+    <input type="hidden" />
+
+    <h2>Input type="month"</h2>
+    <p>Type para campos onde o usuario precisa escolher ou marcar um mês.</p>
+    <label for="">Escolha 1 mês</label>
+    <input type="month" />
+
+    <h2>Input type="number"</h2>
+    <p>Type que permite um tipo de entrada numerico;</p>
+    <label for="">Escolha um numero</label>
+    <input type="number" />
+
+    <h2>Input type="range"</h2>
+    <p>
+      Type que permite ao usuario escolher um valor dentro de um range pré
+      definido <br />
+      pois neste input nos podemos definir min e max.
+    </p>
+    <label for="">Escolha</label>
+    <input type="range" min="10" max="100" />
+
+    <h2>Input type="search"</h2>
+    <p>Type de input para busca ou pesquisas</p>
+    <label for="">O que vc gostaria de saber</label>
+    <input type="search" />
+
+    <h2>Input type="tel"</h2>
+    <p>Type de input para se colocar telefone.</p>
+    <label for="">Coloque seu telefone</label>
+    <input type="tel" />
+
+    <h2>Input type="time"</h2>
+    <p>Type para colocar hora.</p>
+    <label for="">Coloque que horas são.</label>
+    <input type="time" />
+
+    <h2>Input type="url"</h2>
+    <p>Type para campos que devem conter "url"</p>
+    <label for="">Coloque seu site predileto</label>
+    <input type="url" />
+
+    <h2>Input type="week"</h2>
+    <p>Type para colocar uma semana do ano.</p>
+    <label for="">Coloque que semana vc quer aprender mais HTML.</label>
+    <input type="week" />
+
+    <h2>Input type=""</h2>
+    <p></p>
+    <label for=""></label>
+    <input type="text" />
+
+    <h2>Input type= "Button"</h2>
+    <p>Type usado para criar um botão</p>
+
+    <input type="button" value="Click!" />
 
     <h2>Input type="submit"</h2>
     <p>Type que cria um botão que ao ser clicado envia todos os dados.</p>
@@ -87,5 +228,16 @@
       <label for="">Reset este Input</label><br />
       <input type="reset" />
     </form>
+
+    <h2>textarea</h2>
+    <p>
+      Não é uma tag input mas é muitas vezes usada junto o textarea é um campo
+      de <br />
+      texto maior e nos permite colocar como atributos numero de linhas e
+      colunas para<br />
+      determinarmos o tamanho.
+    </p>
+    <label for="">Conte o que achou</label> <br />
+    <textarea cols="30" rows="10"></textarea>
   </body>
 </html>
