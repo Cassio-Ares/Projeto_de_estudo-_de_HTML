@@ -239,5 +239,106 @@
     </p>
     <label for="">Conte o que achou</label> <br />
     <textarea cols="30" rows="10"></textarea>
+
+    <h1>Caixa de seleção</h1>
+    
+    <h2>Select</h2>
+    <h2>Optgroup</h2>
+    <h2>Option</h2>
+
+    <p>
+      São camadas de mesma estrutura sendo o basico o "Select" que é similar a tag "form"<br/>
+      pois ele engloba tudo e o "option" pois ele são as opção de descolha dentro da caixa de seleção<br/>
+      já o "optgroup" serve para criar subdivisões entro as opções.<br/>
+      <strong>Como normalmente caixas de opção estão em formularios é importante estarem dentro de tags "form".</strong>
+    </p>
+   
+    <form>
+      <label >select</label>
+      <select>
+        <option >Option</option>
+        <option >Option</option>
+        <option >Option</option>
+        <option >Option</option>
+      </select>
+    </form>
+
+    <form >
+      <label >Section+optgrouop</label>
+      <select>
+        <optgroup label="optgroup 1">
+          <option >Option</option>
+          <option >Option</option>
+          <option >Option</option>
+          <option >Option</option>
+
+        </optgroup>
+        <optgroup label="optgroup 2">
+          <option >Option</option>
+          <option >Option</option>
+          <option >Option</option>
+          <option >Option</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <h1>fieldset</h1>
+     
+    <p>
+      Tag que cria literalmente uma caixa em torno do formulario<br/>
+      vem normalment junto com a tag "legend" que cria um titulo na caixa.<br/>
+      a ordem da construção fica "form", "fieldset", "legend", "label", "inputs".
+    </p>
+
+    <form >
+      <fieldset>
+        <legend>legend</legend>
+        <label >label</label>
+        <input ><br><br>
+        <label >label</label>
+        <input type="text"><br><br>
+        <label >label</label>
+        <input type="email"><br><br>
+        <label>label</label>
+        <input type="date"><br><br>
+        <input type="submit">
+      </fieldset>
+    </form>
+
+    <h1>output</h1>
+
+    <p>É uma tag que recebe resultado de calculos</p>
+
+    <form oninput="x.value=parseFloat(a.value)+parseFloat(b.value)">
+      <fieldset>
+        <legend>Calculadora</legend>
+        <label for="">Somas</label><br/><br/>
+        <input type="number" id="a">
+        <input type="number"  id="b">
+         =<output  name="x" for="a b"> Resultado da soma</output><br/><br/>
+      </form>
+
+      <form oninput="x.value=parseFloat(c.value)-parseFloat(d.value)">
+        <label for="">Subtração</label><br/><br/>
+        <input type="number"  id="c">
+        <input type="number"  id="d">
+        =<output name="x" for="c d">Resultado da subtração</output> <br/><br/>
+       </form>
+
+       <form oninput="x.value=parseFloat(e.value)*parseFloat(f.value)">
+        <label for="">Multiplicação</label><br/><br/>
+        <input type="number"  id="e">
+        <input type="number"  id="f">
+        =<output name="x" for="e f">Resultado da multiplicação</output><br/><br/>
+     </form>
+      
+     <form oninput="x.value=parseFloat(g.value)/ parseFloat(h.value)">
+        <label for="">Divisão</label><br/><br/>
+        <input type="number"  id="g">
+        <input type="number"  id="h">
+        =<output name="x" for="g h">Resultado da divisão</output><br/><br/>
+      </fieldset>
+      </form>
+     </form>
   </body>
 </html>
